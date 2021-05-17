@@ -50,8 +50,7 @@ app.post("/api/notes", (req, res) => {
       if (err) console.error(err);
     }
   );
-  //to-do:change
-  res.send("Note Added Successfully");
+  res.send(JSON.stringify(newNote));
 });
 
 //Delete Note
