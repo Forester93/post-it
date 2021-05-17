@@ -50,7 +50,21 @@ app.post("/api/notes", (req, res) => {
       if (err) console.error(err);
     }
   );
+  //to-do:change
   res.send("Note Added Successfully");
+});
+
+//Delete Note
+app.delete("/api/notes/:id", (req, res) => {
+  workingArr = workingArr.filter((item) => item.id != req.params.id);
+  fs.writeFile(
+    path.join(__dirname, "/db/db.json"),
+    JSON.stringify(workingArr),
+    (err, data) => {
+      if (err) console.error(err);
+    }
+  );
+  res.send(`Note id ${req.params.id} Deleted Successfully`);
 });
 
 // Starts the server to begin listening
