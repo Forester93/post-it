@@ -1,4 +1,4 @@
-# My Team Profile
+# Post-It
 
 ## License
 
@@ -60,7 +60,9 @@ Body Form
 
 ### Screenshot of the Application
 
-![Screenshot of the page](./assets/images/screenshot-01.PNG)
+![Screenshot of the Homepage](./assets/images/screenshot-01.png)
+
+![Screenshot of the Post-It Board](./assets/images/screenshot-02.png)
 
 ## Questions
 
